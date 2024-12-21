@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Sedan+SC&display=swap');
+
+* {
+    font-family: "Sedan SC", serif;
+}
+
+body {
+    background-color: black;
+    
+}
+
+.header {
+    z-index: 1;
+    position: absolute;
+    display: flex;
+    background-color: #1c1e1f;
+    color: #f2f5f6;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    align-items: center;
+}
+
+.logo {
+    width: 5%;
+    margin-right: 10px;
+}
+
+.procurar {
+    position: absolute;
+    right: 10%;
+    border-radius: 5px;
+    min-width: 260px;
+    min-height: 30px;
+    background-color: #111111;
+    border: none;
+    outline: 2px solid black;
+    color: #f2f5f6;
+    font-size: 150%;
+}
+
+.aside {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: #111111;
+    align-items: center;
+    align-content: space-between;
+    justify-content: space-between;
+    top: 16%;
+    height: 200dvh;
+    max-width: 20%;
+    color: #f2f5f6;
+    left: 0;
+    padding: 2%;
+    text-align: center;
+}
+
+.botoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.botoes > a {    
+    margin-top: 20px;
+    color:#f2f5f6;
+    padding: 20px;
+    border-radius: 5px;
+    background-image: linear-gradient(to right, #56070c, #5f1013);
+    max-height: 20px;
+    min-width: 80%;
+    text-align: center;
+    text-decoration: none;
+    outline: 2px solid black;
+    transition: 0.2s;
+    
+}
+
+.aside > a:hover {
+    outline: 2px solid #f2f5f6;
+    
+}
+
+.user {
+    
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    margin-top: 100px;
+
+}
+
+.materias {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 150px;
+    margin-left: 25dvw;
+}
+
+.materias > a {
+    
+    width: 18dvw;
+    height: 45dvh;
+    background-color: #111111;
+    color: #f2f5f6;
+    text-align: center;
+    padding: 10%;
+    font-size: 2dvh;
+    text-decoration: none;
+    border-radius: 10px;
+    outline: 4px solid #1c1e1f;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+    transition: 0.2s;
+
+}
+
+.materias > a:hover {
+    outline: 4px solid #f2f5f6;
+    background-image: linear-gradient(to top, #202324, #111111);
+    /*background-image: linear-gradient(to top, #56070c, #111111);*/
+}
+
+.materias > a > hr {
+    width:100%;
+    background-color: #f2f5f6;
+}
+
+.materias > a > img {
+    width: 55%;
+    margin-top:80px;
+}
+
+.ocultar {
+    display: none;
+}
+
+.mostrar {
+    display: flex;
+}

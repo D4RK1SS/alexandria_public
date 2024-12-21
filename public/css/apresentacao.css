@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Sedan+SC&display=swap');
+
+* {
+    font-family: "Sedan SC", serif;
+}
+
+body {
+    background-image: linear-gradient(to top,#56070c,#1c1e1f);
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #111111;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #f2f5f6;
+    padding: 20px;
+    
+}
+
+.header > div {
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 3%;
+}
+
+.header > div > a {
+    background-color: #410509;
+    border-radius: 10px;
+    color: #f2f5f6;
+    padding: 10px;
+    border-width: 5px;
+    outline: solid 1px #000000;
+    text-decoration: none;
+    font-size: 130%;
+    transition: 0.2s;
+}
+
+.header > div > a:hover {
+    background-image: linear-gradient(to right, #410509, #56070c);
+}
+
+.container {
+    width: 100dvw;
+    height: 250dvh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.logo {
+    width: 10%;
+}
+.textH {
+    font-size: 200%;
+    color: #f2f5f6;
+}
+.container > hr {
+    width: 90%;
+    color: #f2f5f6;
+}
+
+.container > p {
+    color: #f2f5f6;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    margin-bottom: 0;
+    font-size: larger;
+}
+
+.divider {
+    width: 80%;
+    margin-top: 60px;
+}
+
+.text {
+    color: #f2f2f2;
+    font-size: medium;
+    margin-top: 30px;
+    margin-bottom: -60px;
+}

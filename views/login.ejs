@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Sedan+SC&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="/css/loginPage.css">
+    <title>Alexandria Login</title>
+    <script src="/js/login.js"></script>
+
+</head>
+<body  >
+
+    <% if(messages.sucesso_msg) {%>
+    <div class="sucesso">
+        <span class="fechar_btn" onclick="this.parentElement.style.display='none';">&times;</span>  
+        <strong><%= messages.sucesso_msg%></strong>
+    </div>
+    <%}%>
+
+    <% if(messages.error) {%>
+        <div class="alerta">
+            <span class="fechar_btn" onclick="this.parentElement.style.display='none';">&times;</span>  
+            <strong><%= messages.error%></strong>
+        </div>
+        <%}%>
+
+    <section class="container">
+        <img src="/img/logoAlexandria.png" class="logo">
+        <section class="login">
+            <img src="/img/userPlaceholder.png" class="img">
+            <h1>Login</h1>
+                <form class = "formulario" action="/login" method='post'>
+                    <input name= "email" type="email" class="email" placeholder="Email ou Usuário" required>
+                    <input name= "senha" type="password" class="senha" placeholder="Senha" required>
+                    <button type="submit" class="submit">Entrar</button>
+                    <hr />
+                </form>
+
+            <a class="cadastro" href="/cadastro"> Não tem uma conta? </a>
+
+            <h4>Eclipsal works &COPY; 2023</h4>
+            
+        </section>
+    </section>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Sedan+SC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/cadastro.css">
+    <title>Alexandria</title>
+</head>
+<body>
+
+    <% if(typeof erros != 'undefined' ){%>
+                
+                   
+        <% erros.forEach(erros=>{%>
+            <div class="alerta">
+                <span class="fechar_btn" onclick="this.parentElement.style.display='none';">&times;</span>  
+            <strong> <%= erros.message %>  </strong> 
+            </div>
+        <%})%>
+            
+        <%}%>
+        
+    <section class="container" id="container">
+
+        <img src="../img/logoAlexandria.png" class="logo">
+
+        
+            <section class="cadastro" id="cadastro">
+                <img src="../img/userPlaceholder.png" class="img">
+                <h1>Cadastrar-se</h1>
+                <form class = "formulario" action="/cadastro" method="post">
+                    <input type="text" class="usuario" name="usuario" placeholder="Usuário" required>
+                    <input type="email" class="email" name="email" placeholder="Email" required>
+                    <input type="password" class="senha" name="senha" placeholder="Senha" required>
+                    <input type="password" class="senha2" name="senha2" placeholder="Confirme a senha" required>
+                    <button type="submit" class="submit">Cadastrar</button>
+                </form>
+
+            <a class="login" href="/login"> Já tem uma conta?</h1> </a>
+
+          <!-- <section class="checkProfessor">
+                <input type="checkbox" class="checkbox" id="toggleCheckbox">
+                <h6>Cadastrar como professor?</h6>
+            </section>
+
+            <hr />
+            <h4>Eclipsal works &COPY; 2023</h4>
+        </section>
+
+        <section class="professor" id="professor">
+            <h1>Certificação</h1>
+            <p>Para cadastrar-se como professor, você deve primeiro enviar suas certificações para nosso email, para podermos então verificar
+                se você está apto para publicar lições.
+            </p>
+            <input type="file"/>
+            <button type="submit" class="submit">Enviar</button>
+            <hr />
+            <h4>Eclipsal works &COPY; 2023</h4>
+        </section>
+        --> 
+
+      
+       
+
+    </section>
+
+    
+           
+      
+
+    <script src="/js/cadastro.js"></script>
+    
+</body>
+</html>

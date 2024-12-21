@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Sedan+SC&display=swap');
+* {
+    font-family: "Sedan SC", serif;
+}
+body {
+    background-image: linear-gradient(to bottom, black, #56070c)
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100dvh;
+    margin-bottom: 10px;
+    
+}
+
+.logo {
+    position: absolute;
+    align-self: center;
+    justify-self: center;
+    width: 46%;
+    margin-bottom: 12px;
+    top: 2%;
+    z-index: -1;
+    opacity: 10%;
+}
+
+.cadastro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    background-color: #1c1e1f;
+    min-width: 20%;
+    padding-top: 5px;
+    padding-left: 30px;
+    padding-bottom: 10px;
+    padding-right: 30px;
+    border-radius: 10%;
+    outline: 2px solid black;
+    transition: all 1s;
+}
+
+.img {
+    
+    top: 15%;
+    border: 8px;
+    border-color: black;
+    height: 100px;
+    width: 100px;
+    border-radius: 60%;
+    border-style: solid;
+
+}
+
+.login  {
+    font-size: 100%;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    color: #ffff
+
+}
+
+.usuario {
+    background-color: #f2f5f6;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 6px;    
+    border: none;
+    outline: 3px solid black;
+    width: 90%;
+}
+
+.senha {
+    background-color: #f2f5f6;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 6px;    
+    border: none;
+    outline: 3px solid black;
+    width: 90%;
+}
+.senha2 {
+    background-color: #f2f5f6;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 6px;    
+    border: none;
+    outline: 3px solid black;
+    width: 90%;
+}
+
+.email {
+    background-color: #f2f5f6;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 6px;    
+    border: none;
+    outline: 3px solid black;
+    width: 90%;
+}
+
+.checkbox {
+    height: 20px;
+    width: 20px;
+    left: 0;
+}
+
+.submit {
+    background-image: linear-gradient(to right, #56070c, #5f1013);
+    padding: 20px;
+    min-width: 80%;
+    border-radius: 8px;
+    border-style: solid;
+    border-width: 2px;
+    margin-top: 10px;
+    font-size: 120%;
+    color: black;
+}
+
+.login > hr {
+    color: black;
+    width: 100%;
+    border-style: solid;
+    margin-top: 5px;
+}
+
+.checkProfessor {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+.mover {
+    margin-right: 30%;
+}
+
+.mostrarProfessor {
+    display: none;
+    
+}
+
+.professor {
+    
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: #1c1e1f;
+    min-width: 20%;
+    padding-top: 5px;
+    padding-left: 30px;
+    padding-bottom: 10px;
+    padding-right: 30px;
+    border-radius: 10%;
+    outline: 2px solid black;
+    transition: all 2s;
+    max-width: 100px;
+}
+
+.professor > h1 {
+    font-size: 200%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.professor > p {
+    color: #f2f5f6;
+    font-size: 80%;
+    text-align: justify;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    background-color: #1c1e1f;
+    min-width: 20%;
+    padding-top: 5px;
+    padding-left: 30px;
+    padding-bottom: 10px;
+    padding-right: 30px;
+    border-radius: 10%;
+    transition: all 1s;
+}
+
+.alerta {
+    flex-direction: row;
+    justify-content:space-between;
+    top: 2%;
+    opacity: 10%;
+    padding: 20px;
+    background-color: #f44336;
+    color: white;
+    opacity: 1;
+    transition: opacity 0.6s;
+    margin-bottom: 15px;
+  }
+  
+  
+  .fechar_btn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float:right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .fechar_btn:hover {
+    color: black;
+}
+
+.submit:hover{
+    color: #ffff;
+    cursor: pointer;
+}
