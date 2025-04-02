@@ -1,8 +1,6 @@
 # alexandria
 
-Esse é o repositorio oficial da Alexandria Cursos. Toda alteração feita nesses arquivos modificaram o site. **Por favor, por tudo o que voce
-acredita, _não modifique tais arquivos sem ter 100% de certeza do que está fazendo._**
-
+Esse é o repositorio oficial da Alexandria Cursos.
 Tecnologias usadas:
 > todos os links levam para a documentação da biblioteca/framework
 
